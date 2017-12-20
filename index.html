@@ -1,0 +1,91 @@
+<!doctype html>
+</html>
+<head>
+  <meta charst="UTF-8">
+  <title>scrolling</title>
+  <link href="css.css" rel="stylesheet">
+  <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+  div, h1, h2, p {margin:0px; padding:0px;}
+  .video{position:absolute; top: 50%; left:calc(50%-250px);}
+  footer{width:100%; height:100px; background:black;margin:auto; padding-top: 20px;}
+footer p{font-size:1.0em;margin-top:10px;margin-bottom:10px;line-height:2em;text-align:center; width:100%;}
+
+  </style>
+ </head>
+
+<body>
+  <nav>
+  	<a id="home" a href="#homeSection">Home</a>
+  	<a id="Director" a href="#DirectorSection">Director</a>
+  	<a id="Work" a href="#WorkSection">Work</a>
+  	<a id="Remake" a href="#RemakeSection">Remake</a>
+  	<a id="About" a href="#AboutSection">About</a>
+  </nav> 
+
+<div id= "homeSection" class="sect sectOne"><h1>Mo Movie World</h1></div>
+<div id="DirectorSection" class="subSection">
+	<h2>Director</h2>
+	<div class="w3-content w3-display-container">
+  		<img class="mySlides" src="매튜 본.png" style="width:100%; position:center;">
+ 		<img class="mySlides" src="레니 에이브러햄슨.png" style="width:100%; position:center">
+  		<img class="mySlides" src="맷 리브스.png" style="width:100%; position:center">
+  		<img class="mySlides" src="스파이크 존즈.png" style="width:100%; position:center">
+
+  		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+</div>
+
+<div id="WorkSection" class="sect sectTwo">
+	
+	
+    <video autoplay id="video">
+      <source src="./images/video.mp4" type = "video/mp4" >
+	</video>
+	<img src="./images/극장.png" style="width: 100%;">
+    <h2>Work</h2>
+  </div>
+</div>
+
+<div id="RemakeSection" class="subSection">
+	<h2>Remake</h2>
+	<img src="./images/프랭크.png"  style="width: 80%; display: block; margin-left: auto; margin-right: auto; line-height: 10px;">
+</div>
+
+<div id="AboutSection" class="sect sectThree">
+	<h2>About</h2>
+</div>
+
+<footer>
+    <p>
+         <span class="bold"> Mo Movie World</span> 2013286019 모원혁
+         <br>2017 dnjsgur0818@naver.com All Rights Reserved.    
+      </p>  
+    </footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<style>
+
+{margin: 0;}
+
+html,body{
+	height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin-bottom: 20px;
+}
+
+nav{ 
+  height: 50px;
+  background-color: rgba(0,0,0,.5);
+ }
+
+ .sect{
+  height: 100%;
+ }
+
+ .subSection{
+ height: 50%;
+ background-color: bisque;
+ }
+ 
+ .sectOne{
+ 	background-image: url("홈페이지/ 파일.png");
+ }
+
+ .sectTwo{
+ 	background-image: url("../images/jpg");
+ }
+ 
+ .sectThree{
+ 	background-image: url("../images/.jpg");
+ }
+ 
+ .sectOne{
+ 	background-image: url("../images/.jpg");
+ }
+ 
+ </style>
